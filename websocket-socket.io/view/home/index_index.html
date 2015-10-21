@@ -27,7 +27,7 @@
   <script src="http://s4.qhimg.com/static/535dde855bc726e2/socket.io-1.2.0.js"></script>
   <script src="http://s4.qhimg.com/static/8b5050af3b8512e1/jquery.js"></script>
   <script>
-  $(function() {
+  //$(function() {
   var FADE_TIME = 150; // ms
   var TYPING_TIMER_LENGTH = 400; // ms
   var COLORS = [
@@ -295,6 +295,7 @@
   socket.on('stoptyping', function (data) {
     removeChatTyping(data);
   });
-});</script>
+//});
+</script>
 </body>
 </html>

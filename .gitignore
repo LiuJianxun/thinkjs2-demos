@@ -27,3 +27,5 @@ build/Release
 node_modules
 
 websocket-socket.io/app
+
+websocket-sockjs/app

@@ -16,7 +16,7 @@ export default class extends Base {
   }
   openAction(self){
     var socket = self.http.socket;
-    socket.broadcast.emit('new message', {
+    this.broadcast('new message', {
       username: socket.username,
       message: self.http.data
     });
@@ -29,11 +29,11 @@ export default class extends Base {
     // add the client's username to the global list
     usernames[username] = username;
     ++numUsers;
-    socket.emit('login', {
+    this.emit('login', {
       numUsers: numUsers
     });
     // echo globally (all clients) that a person has connected
-    socket.broadcast.emit('userjoin', {
+    this.broadcast('userjoin', {
       username: socket.username,
       numUsers: numUsers
     });
@@ -45,7 +45,7 @@ export default class extends Base {
       delete usernames[socket.username];
       --numUsers;
       // echo globally that this client has left
-      socket.broadcast.emit('userleft', {
+      this.broadcast('userleft', {
         username: socket.username,
         numUsers: numUsers
       });
@@ -54,20 +54,20 @@ export default class extends Base {
   chatAction(self){
     var socket = self.http.socket;
     // we tell the client to execute 'chat'
-    socket.broadcast.emit('chat', {
+    this.broadcast.emit('chat', {
       username: socket.username,
       message: self.http.data
     });
   }
   typingAction(self){
     var socket = self.http.socket;
-    socket.broadcast.emit('typing', {
+    this.broadcast('typing', {
       username: socket.username
     });
   }
   stoptypingAction(self){
     var socket = self.http.socket;
-    socket.broadcast.emit('stoptyping', {
+    this.broadcast('stoptyping', {
       username: socket.username
     });
   }
