@@ -19,5 +19,8 @@ export default {
     on: true,
     type: '',
     timeout: 3600
+  },
+  options: {
+    authSource: 'admin'
   }
 };

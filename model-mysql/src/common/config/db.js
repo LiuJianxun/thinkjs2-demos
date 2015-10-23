@@ -15,7 +15,7 @@ export default {
   nums_per_page: 10,
   log_sql: true,
   log_connect: true,
-  connectionLimit: 10,
+  //connectionLimit: 10,
   cache: {
     on: true,
     type: '',
