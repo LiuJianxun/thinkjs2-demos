@@ -166,4 +166,7 @@ export default class extends think.model.base {
   where18Test(){
     return this.where({id: [10, 20, 30, 'OR']}).select();
   }
+  where19Test(){
+    return this.where({ id: { IN: [ '1', '2', '3', '4', '5', '6', '7', '8', '9' ] } }).select();
+  }
 }

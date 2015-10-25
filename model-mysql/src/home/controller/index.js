@@ -31,7 +31,7 @@ export default class extends Base {
   }
   testAction(){
     let model = this.model('user');
-    model.where18Test();
+    model.where19Test();
     this.success();
   }
 }
