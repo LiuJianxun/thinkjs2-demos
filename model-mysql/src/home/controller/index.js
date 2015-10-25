@@ -29,4 +29,9 @@ export default class extends Base {
     let data = await this.model('user').page(100, 3).countSelect(false);
     this.success(data);
   }
+  testAction(){
+    let model = this.model('user');
+    model.where18Test();
+    this.success();
+  }
 }
