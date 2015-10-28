@@ -26,4 +26,9 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-*/app/
+mini-project/app
+model-mongo/app
+model-mysql/app
+model-relation/app
+websocket-socket.io/app
+websocket-sockjs/app
