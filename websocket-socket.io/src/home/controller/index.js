@@ -54,7 +54,7 @@ export default class extends Base {
   chatAction(self){
     var socket = self.http.socket;
     // we tell the client to execute 'chat'
-    this.broadcast.emit('chat', {
+    this.broadcast('chat', {
       username: socket.username,
       message: self.http.data
     });
