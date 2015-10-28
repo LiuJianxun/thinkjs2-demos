@@ -8,12 +8,6 @@ application created by [ThinkJS](http://www.thinkjs.org)
 npm install
 ```
 
-## watch-compile
-
-```
-npm run watch-compile
-```
-
 ## start server
 
 ```
