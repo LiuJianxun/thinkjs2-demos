@@ -35,3 +35,4 @@ websocket-sockjs/app
 template-nunjucks/app/
 sqlite-rest/app
 mongo-rest/app
+file-session/app
