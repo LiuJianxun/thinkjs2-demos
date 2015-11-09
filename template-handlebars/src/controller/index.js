@@ -8,6 +8,7 @@ export default class extends Base {
    * @return {Promise} []
    */
   indexAction(){
+    this.assign('name', 'thinkjs')
     //auto render template file index_index.html
     return this.display();
   }

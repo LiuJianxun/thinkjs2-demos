@@ -11,7 +11,7 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
@@ -19,22 +19,13 @@ coverage
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
-
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
+node_modules/
 
-mini-project/app
-model-mongo/app
-model-mysql/app
-model-relation/app
-websocket-socket.io/app
-websocket-sockjs/app
-template-nunjucks/app/
-sqlite-rest/app
-mongo-rest/app
-file-session/app
-template-handlebars/app
-watch-compile/app
+# IDE config
+.idea
+
+# output
+output/
+output.tar.gz
