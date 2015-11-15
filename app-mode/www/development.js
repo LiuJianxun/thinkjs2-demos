@@ -12,5 +12,4 @@ var instance = new thinkjs({
 
 instance.compile(true);
 
-console.log('compile end')
 instance.run();

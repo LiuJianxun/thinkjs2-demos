@@ -7,8 +7,7 @@ export default class extends Base {
    * index action
    * @return {Promise} []
    */
-   * indexAction(){
-    this.assign('name', 'welefen')
+  indexAction(){
     //auto render template file index_index.html
     return this.display();
   }

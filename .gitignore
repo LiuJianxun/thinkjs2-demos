@@ -38,3 +38,4 @@ mongo-rest/app
 file-session/app
 template-handlebars/app
 watch-compile/app
+app-mode/app

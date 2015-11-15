@@ -8,10 +8,17 @@ export default {
   file_ext: '.html',
   file_depr: '_',
   root_path: think.ROOT_PATH + '/view',
-  options: {},
   prerender: (nunjucks, env) => {
-    env.addFilter('thinkjs', function(){
-      return 1111;
-    })
+    console.log('prerender outside');
+  },
+  adapter: {
+    nunjucks: {
+      prerender: (nunjucks, env) => {
+        console.log('prerender inside');
+        env.addFilter('thinkjs', function(){
+          return 1111;
+        })
+      } 
+    }
   }
 };

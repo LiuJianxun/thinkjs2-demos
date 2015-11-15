@@ -10,10 +10,3 @@
  *     
  * }
  */
-
-// let nunjucks = think.npm('nunjucks');
-
-// let env = nunjucks.configure();
-// env.addFilter('thinkjs2', () => {
-//   return 111;
-// });
