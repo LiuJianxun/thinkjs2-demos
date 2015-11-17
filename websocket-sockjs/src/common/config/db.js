@@ -6,10 +6,10 @@
 export default {
   type: 'mysql',
   host: '127.0.0.1',
-  port: '',
+  port: '3306',
   name: '',
-  user: '',
-  pwd: '',
+  user: 'root',
+  pwd: 'root123',
   prefix: 'think_',
   encoding: 'utf8',
   nums_per_page: 10,
