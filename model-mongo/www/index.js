@@ -10,4 +10,5 @@ var instance = new thinkjs({
   env: 'development'
 });
 
+instance.compile();
 instance.run();
